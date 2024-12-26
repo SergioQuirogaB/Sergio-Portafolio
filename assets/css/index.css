@@ -1,0 +1,148 @@
+.toast {
+    visibility: hidden;  /* Ocultar el toast por defecto */
+    min-width: 250px;
+    background-color: #333;
+    color: #000;
+    text-align: center;
+    border-radius: 2px;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 17px;
+}
+
+.show-toast {
+    visibility: visible;  
+    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s; 
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+/* Animación de salida */
+@keyframes fadeOut {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+.toast-exito {
+    background-color: #bef264;  
+}
+
+.toast-error {
+    background-color: #ef4444; 
+}
+
+
+/* Estilo base para los íconos */
+.skill-icon {
+    transition: transform 0.3s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+/* Efecto cuando se hace hover */
+.skill-icon:hover {
+    transform: scale(1.5) translate(var(--x), var(--y));
+    opacity: 0.8;
+}
+
+/* Animación de explosión de los íconos */
+.skill-icon:hover {
+    animation: explosion 0.6s ease-out;
+}
+
+/* Definimos el movimiento explosivo con @keyframes */
+@keyframes explosion {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 1;
+    }
+    25% {
+        transform: scale(1.2) translate(20px, -10px);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.5) translate(-30px, 30px);
+        opacity: 0.6;
+    }
+    75% {
+        transform: scale(1.2) translate(15px, -25px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1) translate(0, 0);
+        opacity: 1;
+    }
+}
+
+/* Para que los íconos tengan un "efecto de dispersión" en todas las direcciones */
+.skill-icon:hover:nth-child(odd) {
+    --x: 15px;
+    --y: 15px;
+}
+
+.skill-icon:hover:nth-child(even) {
+    --x: -15px;
+    --y: -15px;
+}
+  
+/*Linea con movimiento dinamico para algunos títulos*/
+.underline-animation {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #85C2FF;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    animation: underline 3s ease-in-out infinite;
+}
+
+@keyframes underline {
+    0% {
+        transform: scaleX(0);
+        transform-origin: bottom right;
+    }
+    50% {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    100% {
+        transform: scaleX(0);
+        transform-origin: bottom right;
+    }
+}
+
+/*Linea solo para cuando se hace hover sobre los títulos*/
+.soft-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.soft-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffee00;
+    transition: width 0.3s ease;
+}
+
+.soft-underline:hover::after {
+    width: 100%;
+}

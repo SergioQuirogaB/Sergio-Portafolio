@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portafolio Sergio Quiroga</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="shortcut icon" href="/assets/imgs/sq.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <header class="flex justify-between items-center p-6">
+        <nav class="ml-auto space-x-4">
+            <a class="text-white hover:text-indigo-400" href="https://github.com/SergioQuirogaB">GitHub</a>
+            <a class="text-white hover:text-indigo-400" href="https://www.linkedin.com/in/sergio-quiroga-softwaredev">Linkedin</a>
+        </nav>
+    </header>    
+
+    <!-- Main Content Section -->
+    <div data-aos="fade-up" data-aos-duration="3000">
+        <main class="flex flex-col sm:flex-row items-center sm:items-start p-6 space-y-6 sm:space-y-0 sm:space-x-6">
+        <!-- Introduction Section -->
+        <div class="sm:w-2/3 p-8">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-4 soft-underline">
+            Hola soy
+            <span class="text-purple-600" id="role">Sergio Quiroga</span>
+            <span class="wave">👋</span>
+            </h1>
+            <p class="text-sm sm:text-lg mb-4 mt-16">
+            Soy un desarrollador Junior con experiencia en <strong>Frontend, Backend y Full Stack</strong> y un fuerte enfoque en la creación de aplicaciones <strong>seguras y escalables.</strong>
+            Mi pasión por la programación me ha llevado a trabajar en proyectos que abarcan tanto el backend como el frontend, asegurando soluciones completas y funcionales. Actualmente, también estoy ampliando mis conocimientos en 
+            <strong><a class="text-purple-600 hover:underline" href="https://learn.microsoft.com/en-us/dotnet/csharp/">C#</a> </strong>para fortalecer mis habilidades y poder desarrollar aplicaciones aún más robustas.
+            </p>
+        </div>
+
+        <div class="sm:w-1/3">
+            <img alt="Cartoon character with purple hair, sunglasses, and a red shirt with a React logo" class="w-30 h-72 object-cover mx-auto" src="/assets/imgs/sq.png" />
+        </div>
+        </main>
+    </div>
+
+    <!-- Habilidades -->
+    <div data-aos="fade-up" data-aos-duration="3000">
+        <section class="p-6 flex justify-center items-center">
+        <div class="sm:w-2/3 text-center">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-4 underline-animation">
+                Mis <span class="text-purple-600">habilidades</span>
+            </h1>
+            <div class="flex flex-wrap justify-center gap-6 mt-16">
+            <img src="/assets/imgs/php.svg" alt="PHP" class="w-16 h-10 sm:w-24 sm:h-16 skill-icon">
+            <img src="/assets/imgs/html.svg" alt="HTML" class="w-16 h-10 sm:w-24 sm:h-16 skill-icon">
+            <img src="/assets/imgs/js.svg" alt="JavaScript" class="w-16 h-10 sm:w-24 sm:h-16 skill-icon">
+            <img src="/assets/imgs/css.svg" alt="CSS" class="w-16 h-10 sm:w-24 sm:h-16 skill-icon">
+            <img src="/assets/imgs/sechar.svg" alt="C#" class="w-16 h-10 sm:w-24 sm:h-16 skill-icon">
+            <img src="/assets/imgs/python.svg" alt="Python" class="w-16 h-10 sm:w-24 sm:h-16 skill-icon">
+            <img src="/assets/imgs/git.svg" alt="Git" class="w-16 h-10 sm:w-24 sm:h-16 skill-icon">
+            <img src="/assets/imgs/mysql.svg" alt="Mysql" class="w-16 h-10 sm:w-24 sm:h-16 skill-icon">
+            <img src="/assets/imgs/vs.svg" alt="Visual Studio" class="w-16 h-10 sm:w-24 sm:h-16 skill-icon">
+            </div>
+        </div>
+        </section>
+    </div>
+
+    <!-- Testimonios -->
+    <div data-aos="fade-up" data-aos-duration="3000">
+        <section class="bg-gray-900 p-6 mt-10">
+            <div class="md:w-2/3 mx-auto text-center">
+                <h2 class="text-3xl font-bold text-purple-600 mb-4 soft-underline">Lo que dicen de mí</h2>
+                    <div class="flex flex-wrap justify-center gap-6">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-full sm:w-1/3">
+                        <p class="text-gray-400 mb-4">"Sergio es un desarrollador muy talentoso y profesional. Siempre busca la mejor solución para cada proyecto y tiene un excelente manejo de las tecnologías." - <strong>Laura Tibaquirá</strong></p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-full sm:w-1/3">
+                        <p class="text-gray-400 mb-4">"Trabajar con Sergio ha sido un placer. Es un experto en backend y tiene un enfoque muy seguro y escalable para cada proyecto." - <strong>Alfonso Espitia</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Mis Proyectos -->
+    <div data-aos="fade-up" data-aos-duration="3000">
+        <section class="p-6 flex justify-center items-center">
+        <div class="sm:w-2/3 text-center">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-4 underline-animation">Mis 
+            <span class="text-purple-600">proyectos</span>
+            </h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-16">
+            
+            <!-- Proyecto Card 1 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+                <img class="w-full h-48 object-cover rounded-t-lg" src="/assets/imgs/evidences/evidenciaCumple.jpg" alt="Cumpleaños">
+                <h3 class="text-xl font-bold mt-4">Cumpleaños</h3>
+                <p class="text-gray-400 mt-2">He creado una automatización que envía correos electrónicos personalizados de felicitación de cumpleaños.</p>
+                <a href="https://github.com/SergioQuirogaB/CumpleTF" class="mt-4 inline-block text-purple-500 hover:underline">Ver Código</a>
+            </div>
+            
+            <!-- Proyecto Card 2 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+                <img class="w-full h-48 object-cover rounded-t-lg" src="/assets/imgs/evidences/LadingPage.png" alt="Landing Page">
+                <h3 class="text-xl font-bold mt-4">Landing Page</h3>
+                <p class="text-gray-400 mt-2">He creado una landing page para un periodista, con el propósito de que pueda subir y compartir fácilmente sus reportes.</p>
+                <a href="https://github.com/SergioQuirogaB/LandigPageNews" class="mt-4 inline-block text-purple-500 hover:underline">Ver Código</a>
+            </div>
+
+            <!-- Proyecto Card 3 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+                <img class="w-full h-48 object-cover rounded-t-lg" src="/assets/imgs/evidences/magicandy.jpg" alt="E-commerce">
+                <h3 class="text-xl font-bold mt-4">E-commerce</h3>
+                <p class="text-gray-400 mt-2">He desarrollado un e-commerce con gestión de stock, que incluye módulos de ventas, inventario y producción.</p>
+                <a href="https://github.com/SergioQuirogaB/MagiCandy" class="mt-4 inline-block text-purple-500 hover:underline">Ver Código</a>
+            </div>
+
+            <!-- Proyecto Card 4 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+                <img class="w-full h-48 object-cover rounded-t-lg" src="/assets/imgs/evidences/portafolio.jpg" alt="Portafolio">
+                <h3 class="text-xl font-bold mt-4">Portafolio</h3>
+                <p class="text-gray-400 mt-2">He creado un portafolio que presenta mis proyectos y trabajos más destacados.</p>
+                <a href="https://github.com/SergioQuirogaB/Pratice-Front-end" class="mt-4 inline-block text-purple-500 hover:underline">Ver Código</a>
+            </div>
+
+            </div>
+        </div>
+        </section>
+    </div>
+
+    <!-- Formulario de Contacto -->
+    <div data-aos="fade-up" data-aos-duration="3000">
+        <section class="bg-gray-800 p-6 mt-14">
+            <div class="md:w-2/3 mx-auto text-center">
+                <h2 class="text-3xl font-bold text-purple-600 mb-4">Contacto</h2>
+                <form id="contact-form">
+                    <div class="mb-4">
+                        <input type="text" name="name" placeholder="Tu nombre" id="name" class="w-full p-3 rounded bg-gray-900 text-white border border-gray-700" minlength="10" maxlength="30" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" name="email" placeholder="Tu correo electrónico" id="email" class="w-full p-3 rounded bg-gray-900 text-white border border-gray-700" minlength="15" maxlength="40" required>
+                    </div>
+                    <div class="mb-4">
+                        <textarea name="message" placeholder="Tu mensaje" id="message" class="w-full p-3 rounded bg-gray-900 text-white border border-gray-700" rows="4" minlength="12" maxlength="180" required></textarea>
+                    </div>
+                    <button type="submit" class="text-white bg-purple-600 hover:bg-purple-700 py-2 px-6 rounded">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-gray-900 text-center p-6">
+        <p class="text-white">© <span id="year"></span> Sergio Quiroga. Todos los derechos reservados.</p>
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="https://www.linkedin.com/in/sergio-quiroga-softwaredev"><img src="/assets/imgs/linkedin.svg" alt="" class="w-6 h-6"></a>
+            <a href="https://github.com/SergioQuirogaB"><img src="/assets/imgs/github.svg" alt="" class="w-6 h-6"></a>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast" class="toast">
+        <span id="toast-message"></span>
+    </div>
+
+<script src="/assets/js/index.js"></script>
+</body>
+</html>
