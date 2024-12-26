@@ -132,7 +132,7 @@
     </div>
 
     <!-- Formulario de Contacto -->
-    <div data-aos="fade-up" data-aos-duration="3000">
+    <!-- <div data-aos="fade-up" data-aos-duration="3000">
         <section class="bg-gray-800 p-6 mt-14">
             <div class="md:w-2/3 mx-auto text-center">
                 <h2 class="text-3xl font-bold text-purple-600 mb-4">Contacto</h2>
@@ -150,10 +150,11 @@
                 </form>
             </div>
         </section>
-    </div>
+    </div> -->
 
     <footer class="bg-gray-900 text-center p-6">
-        <p class="text-white">© <span id="year"></span> Sergio Quiroga. Todos los derechos reservados.</p>
+        <p class="text-white">© <span id="year"></span></p>
+        <p class="text-white -mt-1"><span>sergioa_quirogab2003@hotmail.com</span></p>
         <div class="flex justify-center space-x-4 mt-2">
             <a href="https://www.linkedin.com/in/sergio-quiroga-softwaredev"><img src="/assets/imgs/linkedin.svg" alt="" class="w-6 h-6"></a>
             <a href="https://github.com/SergioQuirogaB"><img src="/assets/imgs/github.svg" alt="" class="w-6 h-6"></a>
@@ -161,9 +162,9 @@
     </footer>
 
     <!-- Toast Container -->
-    <div id="toast" class="toast">
+    <!-- <div id="toast" class="toast">
         <span id="toast-message"></span>
-    </div>
+    </div> -->
 
 <script src="/assets/js/index.js"></script>
 </body>
